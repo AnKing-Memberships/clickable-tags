@@ -96,14 +96,17 @@ add_to_card = """
   }
   
 </style>
-<script type="text/javascript">
-function ct_click(tag) {
-    pycmd("ct_click_" + tag)
-}
-function ct_dblclick(tag, deck) {
-    pycmd("ct_dblclick_" + tag + "|" + deck)
-}
-</script>
+
+<div>
+  <script type="text/javascript">
+    function ct_click(tag) {
+      pycmd("ct_click_" + tag)
+    }
+    function ct_dblclick(tag, deck) {
+      pycmd("ct_dblclick_" + tag + "|" + deck)
+    }
+  </script>
+</div>
 """
 
 
