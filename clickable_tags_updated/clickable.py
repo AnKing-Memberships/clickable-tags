@@ -74,17 +74,22 @@ def css(self, _old):
     )
 
 
-def render(self, template, context, encoding, _old):
-    js = """
-<script type="text/javascript">
-  function ct_click(tag) {
-    pycmd("ct_click_" + tag)
-  }
-  function ct_dblclick(tag, deck) {
-    pycmd("ct_dblclick_" + tag + "|" + deck)
-  }
-</script>
+# the outer div prevents a crash of the Closet add-on
+JS = """
+<div>
+  <script type="text/javascript">
+    function ct_click(tag) {
+      pycmd("ct_click_" + tag)
+    }
+    function ct_dblclick(tag, deck) {
+      pycmd("ct_dblclick_" + tag + "|" + deck)
+    }
+  </script>
+</div>
 """
+
+
+def render(self, template, context, encoding, _old):
     kbd = """
 <kbd onclick="ct_click('{tag}')" ondblclick="ct_dblclick('{tag}', '{deck}')">
   {tag}
@@ -99,7 +104,7 @@ def render(self, template, context, encoding, _old):
                 for tag in context['Tags'].split()
             ]
         )
-        template = sub('{{Tags}}', s + js, template)
+        template = sub('{{Tags}}', s + JS, template)
     return _old(self, template, context, encoding)
 
 
