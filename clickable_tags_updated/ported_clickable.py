@@ -142,15 +142,12 @@ def on_field_filter(text, field, filter, context: TemplateRenderContext):
     if filter != "clickable" or field != "Tags":
         return text
 
-
     return "".join(
         [
-          f"""
-          <kbd class="clickable-tag" onclick="ct_click('{tag}')" ondblclick="ct_dblclick('{tag}', '{context.fields()["Deck"]}')">
+            f"""<kbd class="clickable-tag" onclick="ct_click('{tag}')" ondblclick="ct_dblclick('{tag}', '{context.fields()["Deck"]}')">
           {tag}
-          </kbd>
-          """
-          for tag in context.fields()["Tags"].split()
+          </kbd>"""
+            for tag in context.fields()["Tags"].split()
         ]
     )
 
