@@ -1,9 +1,6 @@
-Miscellaneous Anki Projects
-===========================
+# Clickable Tags
 
-## Clickable Tags
-
-![Clickable Tags](https://raw.githubusercontent.com/luoliyan/anki-misc/master/screenshots/clickable-tags.png)
+![Clickable Tags](https://raw.githubusercontent.com/AnKingMed/clickable-tags/master/screenshots/clickable-tags.png)
 
 A stripped-down port of the [Clickable Tags](https://ankiweb.net/shared/info/1321188674) add-on to Anki 2.1.
 
@@ -11,24 +8,27 @@ Just add the `{{Tags}}` special field to your card template. The add-on will tak
 
 Single-click the tag to search for notes with that tag. Double-click to limit the search to the current deck.
 
-## HTML Editor Tweaks
 
-![HTML Editor Tweaks](https://raw.githubusercontent.com/luoliyan/anki-misc/master/screenshots/html-editor-tweaks.png)
 
-A set of tweaks to the built-in HTML editor. Hopefully an improvement for those who spend a lot of time editing cards.
+### Please consider checking out our:
+<br>
+<a href="https://www.youtube.com/theanking/playlists" rel="nofollow">YouTube Channel</a>- <i>How to use Anki for beginners and advanced users.</i> 
+<br>
+<a href="https://www.instagram.com/ankingmed" rel="nofollow">Instagram</a>/<a href="https://www.facebook.com/ankingmed" rel="nofollow">Facebook</a>: <i>@Ankingmed</i>
+<br>
+<a href="https://www.ankingmed.com" rel="nofollow">www.AnKingMed.com</a>- <i>Recommended add-ons, tutorials and more including <b>how to download 40+ add-ons in &lt; 5min</b></i>
+<br>
+<a href="https://www.ankipalace.com/membership" rel="nofollow">Patreon</a>- <i>Support our work and <b>get individualized Anki help!</b></i><br>
 
-Very alpha. Seems to work 99% of the time, but please make a backup of your collection first.
-
-### Tweaks
-
-- Prettifies the HTML by running it through _Beautiful Soup_
-    - Reformats pretty aggressively, which is what I wanted, but not everyone will like it
-- Remaps <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to <kbd>F12</kbd>
-- Sets a decent monospace font (assumes [Iosevka](https://github.com/be5invis/Iosevka); edit `__init__.py` to change)
-- Resizes the editor to something more reasonable than **400 x 300**
-- Disables the default behaviour of loading the cursor on the last line (personal preference, yes)
-
-### Known Issues
-
-- Adds spurious space just before `<sub>` or `<sup>`
-- Incorrect handling of tags inside parentheses
+<p align="center">
+<a href="https://www.ankingmed.com" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/AnKing/AnKingSmall.png?raw=true"></a><a href="https://www.ankingmed.com" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/AnKing/TheAnKing.png?raw=true"></a>
+  <br>
+  <a href="https://www.facebook.com/ankingmed" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/Social/FB.png?raw=true"></a>     <a href="https://www.instagram.com/ankingmed" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/Social/Instagram.png?raw=true"></a>     <a href="https://www.youtube.com/theanking" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/Social/YT.png?raw=true"></a>     <a href="https://www.tiktok.com/@ankingmed" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/Social/TikTok.png?raw=true"></a>     <a href="https://www.twitter.com/ankingmed" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/Social/Twitter.png?raw=true"></a>
+  <br>
+<a href="https://www.ankipalace.com/membership" rel="nofollow"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/AnKing/Patreon.jpg?raw=true"></a>
+<br>
+<b>Check out our Anki Mastery Course! (The source of funding for this project)</b><br>
+          <a href="https://courses.ankipalace.com/?utm_source=anking_bg_add-on&amp;utm_medium=anki_add-on_page&amp;utm_campaign=mastery_course" rel="nofollow">https://courses.ankipalace.com</a>
+<a href="https://courses.ankipalace.com/?utm_source=anking_bg_add-on&amp;utm_medium=anki_add-on_page&amp;utm_campaign=mastery_course" rel="nofollow">
+  <br>
+  <img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/AnKing/AnkiPalace.png?raw=true"></a></p>
